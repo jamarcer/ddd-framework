@@ -14,7 +14,7 @@ class MessageTest extends TestCase
     public function given_message_when_ask_to_name_and_version_and_type_then_return_expected_info()
     {
         MessageTested::set('example', 'v1', 'tested');
-        $this->assertEquals('example', MessageTested::messageName());
+        $this->assertEquals('example', MessageTested->messageName());
         $this->assertEquals('v1', MessageTested::messageVersion());
         $this->assertEquals('tested', MessageTested::messageType());
     }
