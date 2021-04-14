@@ -14,7 +14,7 @@ final class SimpleMessageJsonApiSerializable implements SimpleMessageSerializabl
             [
                 'data' => [
                     'message_id' => $message->messageId(),
-                    'type' => $message::messageName(),
+                    'type' => $message->messageName(),
                     'attributes' => $message->messagePayload(),
                 ],
             ],

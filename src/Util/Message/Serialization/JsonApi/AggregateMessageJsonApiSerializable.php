@@ -14,7 +14,7 @@ final class AggregateMessageJsonApiSerializable implements AggregateMessageSeria
             [
                 'data' => [
                     'message_id' => $message->messageId(),
-                    'type' => $message::messageName(),
+                    'type' => $message->messageName(),
                     'occurred_on' => $message->occurredOn()->getTimestamp(),
                     'attributes' => \array_merge(
                         ['aggregate_id' => $message->aggregateId()->value()],
