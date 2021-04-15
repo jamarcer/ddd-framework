@@ -12,6 +12,8 @@ abstract class Message implements \JsonSerializable
 
     abstract public function messageName(): string;
 
+    abstract public static function messageHandledName(): array;
+
     abstract public static function messageVersion(): string;
 
     abstract public static function messageType(): string;
